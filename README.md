@@ -40,3 +40,24 @@ This app can use GitHub Actions for CI. The following workflows are configured:
 
 mit
 # Frappe-practice
+
+
+# Frappe-Practice
+
+# SQL Essentials – Frappe Practice
+## 🔹 Normal SQL Path
+
+**File Location:**
+/doctype/medical_practice/medical_practice.py
+
+**Message:**  
+You can check this via the following link:  
+👉 [http://localhost:8001/app/patient-visit](http://localhost:8001/app/patient-visit)
+
+## 🔸 Qubic Query (Stored Procedure)
+
+**File Location:**
+/doctype/medical_practice/medical_practice.py
+
+**Message:**  
+Check this **in Desk only** (via Frappe backend interface)

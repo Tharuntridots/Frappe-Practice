@@ -1,0 +1,28 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-06-13 17:00:09.406983",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letterhead": null,
+ "modified": "2025-06-13 17:00:09.406983",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Medical Practice Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Medical Practice",
+ "report_name": "Medical Practice Report",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

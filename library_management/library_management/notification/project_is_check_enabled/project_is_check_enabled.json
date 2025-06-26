@@ -1,0 +1,31 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "condition": "",
+ "creation": "2025-06-12 17:32:12.799243",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Project",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<h1>Notification</h1>\n",
+ "message_type": "Markdown",
+ "modified": "2025-06-12 18:09:41.997533",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Project Is_Check Enabled",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "System Manager"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "set_property_after_alert": "title",
+ "subject": "Is_Check Enabled for {{ doc.title }}"
+}

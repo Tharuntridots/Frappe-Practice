@@ -1,0 +1,9 @@
+<h1>All Projects</h1>
+<ul>
+  {% for project in projects %}
+    <li>
+      <a href="/projects/{{ project.name }}">{{ project.title }}</a><br>
+      <small>{{ project.description }}</small>
+    </li>
+  {% endfor %}
+</ul>

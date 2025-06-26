@@ -1,0 +1,23 @@
+{
+ "content": null,
+ "creation": "2025-06-02 13:34:39.445729",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2025-06-02 13:34:39.445729",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "article-page",
+ "owner": "Administrator",
+ "page_name": "article-page",
+ "roles": [
+  {
+   "role": "Administrator"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "arti"
+}

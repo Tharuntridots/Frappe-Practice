@@ -1,0 +1,1 @@
+console.log("Doctype js: one in mentioned doctype")

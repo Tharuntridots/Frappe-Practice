@@ -1,0 +1,7 @@
+<!-- File: apps/library_management/library_management/www/test-jinja.html -->
+
+{% set account_balance = 12345.67 %}
+<h1>Hi, {{ get_fullname(frappe.session.user) }}</h1>
+<p>Your account balance is {{ account_balance | format_currency("₹") }}</p>
+<p>1 + 2 = {{ sum(1, 2) }}</p>
+<p>3 × 4 = {{ multiply(3, 4) }}</p>

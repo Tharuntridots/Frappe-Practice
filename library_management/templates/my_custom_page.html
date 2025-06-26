@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title or "Custom Base Page" }}</title>
+  </head>
+  <body>
+    <h1 style="color:red;">🌟 This is My Custom Base Template 🌟</h1>
+
+    {% block content %}
+    <!-- Default content area -->
+    <p>This is a PDF generated from a custom Frappe page.</p>
+
+    <!-- Step 3: Add your button here -->
+    <button onclick="downloadPDF()">Download PDF</button>
+
+    <script>
+    function downloadPDF() {
+        window.location.href = "/api/method/library_management.api.generate_custom_pdf";
+    }
+    </script>
+
+    {% endblock %}
+  </body>
+</html>

@@ -242,3 +242,222 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+# razarpay
+
+# doctype_js = {
+#     "Razorpay Test": "public/js/razorpay_test.js"
+# }
+
+# app_include_js = [
+#     "https://checkout.razorpay.com/v1/checkout.js"
+# ]
+
+
+# google drive
+
+# app_include_js = [
+#     "/assets/library_management/js/drive.js"
+# ]
+
+# biometric
+# doctype_js = {
+#     "Biometric Attendance": "public/js/biometric_attendance.js"
+# }
+
+
+# app_include_js = "/assets/library_management/js/samosa.js"
+
+# web_include_js = ["assets/library_management/js/portal_script.js"]
+# web_include_css = ["assets/library_management/css/portal_style.css"]
+
+
+# webform_include_js = {"Article": "public/js/article.js"}
+
+# website_context = {
+#     "favicon": "/assets/library_management/images/favicon.png"
+# }
+
+
+# extend_website_page_controller_context = {
+#     "frappe.www.404": "library_management.pages.context_404"
+# }
+
+# website_catch_all = "not_found"
+
+
+# home_page = "Homepage"
+
+
+# brand_html = '<div><img src="/assets/library_management/images/favicon.png" style="height:20px; margin-right: 8px;"/> TennisMart</div>'
+
+# base_template = "library_management/templates/my_custom_base.html"
+
+
+# fixtures = [
+#     "Article"
+# ]
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+#Desk it can access globally in the frappe 
+app_include_js = ["assets/library_management/js/desk_custom.js"]
+
+#Portal it can used in www web pages
+web_include_js = ["assets/library_management/js/portal_custom.js"]
+
+#web form it can used in webform 
+webform_include_js = {"Sales Tracker": "public/js/webform_sales_tracker.js"}
+
+#page js 
+page_js = {"article-page" : "public/js/sales_page.js"}
+
+#doctype js it only loa dthe particular doctype
+doctype_js = {
+    "Sales Tracker": "public/js/hookdoc.js"
+}
+
+#sounds can hear by submit the doctype = frappe.utils.play_sound("ping")
+sounds = [
+    {"name": "ping", "src": "/assets/library_management/images/ping.mp3", "volume": 0.4}
+]
+
+# migrate
+before_migrate = "library_management.migrate.before_migrate"
+after_migrate = "library_management.migrate.after_migrate"
+
+#test = Run the command for test purpose   bench --site library.localhost run-tests --app library_management
+before_tests = "library_management.migrate.before_tests"  
+
+
+#file hook
+# before_write_file = "library_management.overrides.file.before_write"
+# write_file = "library_management.overrides.file.write_file"
+# delete_file_data_content = "library_management.overrides.file.delete_file"
+
+# boot info console = frappe.boot.my_global_key
+extend_bootinfo = "library_management.boot.boot_session"
+
+# get_web_pages_with_dynamic_routes = "library_management.script.get_web_pages_with_dynamic_routes"
+
+website_redirects = [
+    {"source": "/hello", "target": "/Homepage"}
+]
+
+# if we give /hello it redirect to /homepage helps to path problem solve
+# website_path_resolver = "library_management.custom.website_routing.my_resolver"
+
+website_route_rules = [
+    {"from_route": "/mobile", "to_route": "/mobile_page"}
+]
+
+# website_catch_all = "not_found"
+
+portal_menu_items = [
+    {"title": "Dashboard", "route": "/dashboard", "role": "Teacher"},
+    {"title": "Orders", "route": "/orders", "role": "Teacher"},
+]
+
+brand_html = '<div><img src="/assets/library_management/images/favicon.png" height="25" style="margin-right: 5px;"/> <b>TennisMart</b></div>'
+
+# work
+# base_template = "library_management/templates/my_custom_base.html"
+
+# redirect without clicking any button
+# braintree_success_page = "app.integrations.braintree_success_page"
+
+calendars = ["Fields"] 
+
+default_mail_footer = """
+ <div>
+ Sent via <a href="https://tennismart.com" target="_blank">TennisMart</a>
+</div>
+"""
+
+# Work
+# extend_website_page_controller_context = {
+#     "frappe.www.404": "library_management.pages.context_404"
+# }
+ 
+# on_login = "library_management.overrides.successful_login"
+# on_session_creation = "library_management.overrides.allocate_free_credits"
+# on_logout = "library_management.overrides.clear_user_cache"
+
+
+auth_hooks = ["library_management.overrides.validate_custom_jwt"]
+
+fixtures = [
+    "Field Setup"
+]
+
+
+# logged user entries only display
+permission_query_conditions = {
+    "Note Book": "library_management.permissions.notebook_query"
+}
+
+# Permission only give for a single record to gokul
+has_permission = {
+    "Field Setup": "library_management.permissions.notebook_has_permission"   
+}
+
+override_doctype_class = {
+    "Field Setup": "library_management.overrides.CustomFieldSetup"
+}
+
+override_whitelisted_methods = {
+    "library_management.library_management.doctype.field_setup.field_setup.get_enabled_fieldsetups":
+    "library_management.overrides.custom_get_enabled_fieldsetups"
+}
+
+
+# doc_events = {
+#     "*": {
+#         "after_insert": "library_management.crud_events.after_insert_all"
+#     },
+#     "Field Setup": {
+#         "after_insert": "library_management.crud_events.after_insert_fieldsetup",
+#         "before_save": "library_management.crud_events.before_save_fieldsetup"
+#     }
+# }
+
+# scheduler_events = {
+#     "hourly": [
+#         "library_management.scheduler_tasks.hourly_notification",
+#         "library_management.scheduler_tasks.hourly_notification_email",
+#     ]
+# }
+
+# additional_timeline_content = {
+#     "Field Setup": ["library_management.timeline.field_setup_timeline"]
+# }
+
+
+jinja = {
+    "methods": [
+        "library_management.jinja.method",
+        "library_management.utils.get_fullname"
+    ],
+    "filters": [
+        "library_management.utils.format_currency"
+    ]
+}
+
+auto_cancel_exempted_doctypes = ["Library Membership"]
+
+# depend before install your app
+# required_apps = ["erpnext"]
+
+user_data_fields = [
+    {"doctype": "Library Member", "filter_by": "email"},
+]
+
+
+# notification_config = "library_management.notification.get_notification_config"
+
+
+page_js = {"article-page" : "public/js/list-page.js"}
+
+app_include_js = [
+    "/assets/library_management/js/list_page.js"
+]

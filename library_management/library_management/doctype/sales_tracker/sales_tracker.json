@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "ST-.####",
+ "creation": "2025-06-09 13:13:52.423687",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_iydu",
+  "amended_from",
+  "customer_name",
+  "data",
+  "total_amount",
+  "total_items",
+  "column_break_gfwi",
+  "sales_items",
+  "filed_link",
+  "attach_file",
+  "section_break_bykp",
+  "route",
+  "column_break_hhmc",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_iydu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Sales Tracker",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "label": "Customer Name"
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "Data",
+   "label": "Data"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "total_items",
+   "fieldtype": "Int",
+   "label": "Total Items"
+  },
+  {
+   "fieldname": "sales_items",
+   "fieldtype": "Table",
+   "label": "Sales Items",
+   "options": "Sales Tracker Item"
+  },
+  {
+   "fieldname": "filed_link",
+   "fieldtype": "Link",
+   "label": "Filed Link",
+   "options": "Field Setup"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "column_break_gfwi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_bykp",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_hhmc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attach_file",
+   "fieldtype": "Attach",
+   "label": "Attach File"
+  }
+ ],
+ "grid_page_length": 50,
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-06-10 19:00:55.764591",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Sales Tracker",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "route": "sales",
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

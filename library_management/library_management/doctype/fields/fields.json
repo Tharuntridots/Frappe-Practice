@@ -1,0 +1,427 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "creation": "2025-05-12 19:55:26.636404",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_m4v2",
+  "auto_complete",
+  "attach",
+  "attach_image",
+  "barcode",
+  "button",
+  "check",
+  "code",
+  "color",
+  "schedule_date",
+  "column_break_yaum",
+  "currency",
+  "data",
+  "date",
+  "datetime",
+  "duration",
+  "float",
+  "geolocation",
+  "heading",
+  "html",
+  "html_editor",
+  "icon",
+  "image",
+  "int",
+  "json",
+  "long_text",
+  "markdown_editor",
+  "password",
+  "percent",
+  "phone",
+  "read__only",
+  "rating",
+  "section_break_ymnd",
+  "signature",
+  "select",
+  "small_text",
+  "tab_break_oahi",
+  "text",
+  "text_editor",
+  "time",
+  "click_me",
+  "link",
+  "name1",
+  "dlink",
+  "full_name",
+  "table",
+  "multitable",
+  "link_and_tables_tab",
+  "link1",
+  "value",
+  "dlink1",
+  "value1",
+  "table1",
+  "multitable1",
+  "email",
+  "html2",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_m4v2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "auto_complete",
+   "fieldtype": "Autocomplete",
+   "in_list_view": 1,
+   "label": "Auto Complete"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "attach_image",
+   "fieldtype": "Attach Image",
+   "label": "Attach Image"
+  },
+  {
+   "fieldname": "barcode",
+   "fieldtype": "Barcode",
+   "label": "Barcode"
+  },
+  {
+   "fieldname": "button",
+   "fieldtype": "Button",
+   "label": "Button"
+  },
+  {
+   "default": "0",
+   "fieldname": "check",
+   "fieldtype": "Check",
+   "label": "Check"
+  },
+  {
+   "fieldname": "code",
+   "fieldtype": "Code",
+   "label": "Code",
+   "options": "Python"
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color"
+  },
+  {
+   "fieldname": "column_break_yaum",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "currency",
+   "fieldtype": "Currency",
+   "label": "Currency"
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "Data",
+   "label": "Data",
+   "placeholder": "this is normal data"
+  },
+  {
+   "documentation_url": "https://docs.frappe.io/framework/user/en/basics/doctypes/naming",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "datetime",
+   "fieldtype": "Datetime",
+   "label": "DateTime"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "float",
+   "fieldtype": "Float",
+   "label": "Float",
+   "precision": "2"
+  },
+  {
+   "fieldname": "geolocation",
+   "fieldtype": "Geolocation",
+   "label": "Geolocation"
+  },
+  {
+   "fieldname": "heading",
+   "fieldtype": "Heading",
+   "label": "Heading",
+   "options": "Tridots"
+  },
+  {
+   "fieldname": "html",
+   "fieldtype": "HTML",
+   "label": "Html"
+  },
+  {
+   "fieldname": "html_editor",
+   "fieldtype": "HTML Editor",
+   "label": "HTML Editor"
+  },
+  {
+   "fieldname": "icon",
+   "fieldtype": "Icon",
+   "label": "Icon"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Image",
+   "label": "Image",
+   "options": "attach_image"
+  },
+  {
+   "fieldname": "int",
+   "fieldtype": "Int",
+   "label": "Int"
+  },
+  {
+   "fieldname": "json",
+   "fieldtype": "JSON",
+   "label": "JSON"
+  },
+  {
+   "fieldname": "long_text",
+   "fieldtype": "Long Text",
+   "label": "Long Text"
+  },
+  {
+   "fieldname": "markdown_editor",
+   "fieldtype": "Markdown Editor",
+   "label": "Markdown Editor"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Password",
+   "label": "Password"
+  },
+  {
+   "fieldname": "percent",
+   "fieldtype": "Percent",
+   "label": "Percent",
+   "precision": "2"
+  },
+  {
+   "default": "+91",
+   "fieldname": "phone",
+   "fieldtype": "Phone",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "read__only",
+   "fieldtype": "Read Only",
+   "label": "Read  Only"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Rating",
+   "label": "Rating"
+  },
+  {
+   "fieldname": "section_break_ymnd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "select",
+   "fieldtype": "Select",
+   "label": "Select",
+   "options": "Apple\nGrapes\nOrange"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "small_text",
+   "fieldtype": "Small Text",
+   "label": "Small Text"
+  },
+  {
+   "fieldname": "tab_break_oahi",
+   "fieldtype": "Tab Break",
+   "label": "Others"
+  },
+  {
+   "fieldname": "text",
+   "fieldtype": "Text",
+   "label": "Text"
+  },
+  {
+   "fieldname": "text_editor",
+   "fieldtype": "Text Editor",
+   "label": "Text Editor"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "click_me",
+   "fieldtype": "Button",
+   "label": "click me"
+  },
+  {
+   "fetch_from": "link.full_name",
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Link",
+   "label": "Link ",
+   "options": "Library Member"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Full Name",
+   "options": "dlink"
+  },
+  {
+   "fieldname": "dlink",
+   "fieldtype": "Link",
+   "label": "Dlink",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "table",
+   "fieldtype": "Table",
+   "label": "Table",
+   "options": "Child"
+  },
+  {
+   "fieldname": "multitable",
+   "fieldtype": "Table MultiSelect",
+   "label": "Multitable",
+   "options": "Asignee"
+  },
+  {
+   "fieldname": "link_and_tables_tab",
+   "fieldtype": "Tab Break",
+   "label": "Link and Tables"
+  },
+  {
+   "fieldname": "link1",
+   "fieldtype": "Link",
+   "label": "Link1",
+   "options": "Article"
+  },
+  {
+   "fetch_from": "link1.author",
+   "fieldname": "value",
+   "fieldtype": "Data",
+   "label": "Value"
+  },
+  {
+   "fieldname": "dlink1",
+   "fieldtype": "Link",
+   "label": "Dlink1",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "value1",
+   "fieldtype": "Dynamic Link",
+   "label": "value1",
+   "options": "dlink1"
+  },
+  {
+   "fieldname": "table1",
+   "fieldtype": "Table",
+   "label": "table1",
+   "options": "Child"
+  },
+  {
+   "fieldname": "multitable1",
+   "fieldtype": "Table MultiSelect",
+   "label": "Multitable1",
+   "options": "Asignee"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "email",
+   "options": "Email"
+  },
+  {
+   "fieldname": "html2",
+   "fieldtype": "HTML",
+   "label": "html2"
+  },
+  {
+   "default": "1",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
+  },
+  {
+   "fieldname": "schedule_date",
+   "fieldtype": "Date",
+   "label": "Schedule Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "has_web_view": 1,
+ "icon": "add-round",
+ "index_web_pages_for_search": 1,
+ "is_calendar_and_gantt": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2025-06-14 12:34:31.704418",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Fields",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "Field Route",
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "auto_complete"
+}

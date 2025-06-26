@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_auto_repeat": 1,
+ "allow_rename": 1,
+ "autoname": "Autoincrement",
+ "creation": "2025-05-14 12:59:31.434876",
+ "default_email_template": "kishore",
+ "description": "Person details",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_yivc",
+  "amended_from",
+  "lft",
+  "rgt",
+  "is_group",
+  "old_parent",
+  "parent_check2",
+  "name1",
+  "age",
+  "degree",
+  "image",
+  "link",
+  "fulllname",
+  "link2",
+  "dlink",
+  "table",
+  "dtable"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_yivc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Check2",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Left",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Right",
+   "no_copy": 1,
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "label": "Old Parent",
+   "options": "Check2"
+  },
+  {
+   "fieldname": "parent_check2",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Parent Check2",
+   "options": "Check2"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Int",
+   "label": "age"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "degree",
+   "fieldtype": "Data",
+   "label": "Degree"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "label": "image"
+  },
+  {
+   "fieldname": "link",
+   "fieldtype": "Link",
+   "label": "link ",
+   "options": "Article"
+  },
+  {
+   "fetch_from": "link.author",
+   "fieldname": "fulllname",
+   "fieldtype": "Data",
+   "label": "Fulllname"
+  },
+  {
+   "fieldname": "link2",
+   "fieldtype": "Link",
+   "label": "Link2",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "dlink",
+   "fieldtype": "Dynamic Link",
+   "label": "dlink ",
+   "options": "link2"
+  },
+  {
+   "fieldname": "table",
+   "fieldtype": "Table",
+   "label": "Table",
+   "options": "Child"
+  },
+  {
+   "fieldname": "dtable",
+   "fieldtype": "Table MultiSelect",
+   "label": "Dtable",
+   "options": "Asignee"
+  }
+ ],
+ "grid_page_length": 50,
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "is_tree": 1,
+ "links": [],
+ "modified": "2025-05-14 13:45:26.308470",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Check2",
+ "naming_rule": "Autoincrement",
+ "nsm_parent_field": "parent_check2",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "read_only": 1,
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "name1"
+}

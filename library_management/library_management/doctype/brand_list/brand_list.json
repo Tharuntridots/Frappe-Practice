@@ -1,0 +1,69 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-06 19:04:06.112655",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_iotr",
+  "brand_item",
+  "value",
+  "value2",
+  "brand_logo"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_iotr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "brand_item",
+   "fieldtype": "Data",
+   "label": "Brand Item"
+  },
+  {
+   "fieldname": "value",
+   "fieldtype": "Int",
+   "label": "Value "
+  },
+  {
+   "fieldname": "value2",
+   "fieldtype": "Int",
+   "label": "value2"
+  },
+  {
+   "fieldname": "brand_logo",
+   "fieldtype": "Attach",
+   "label": "Brand Logo"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-14 16:29:21.718096",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Brand List",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "brand_item"
+}

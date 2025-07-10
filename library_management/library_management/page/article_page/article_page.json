@@ -4,7 +4,7 @@
  "docstatus": 0,
  "doctype": "Page",
  "idx": 0,
- "modified": "2025-06-02 13:34:39.445729",
+ "modified": "2025-07-07 11:42:53.320646",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "article-page",
@@ -18,6 +18,6 @@
  "script": null,
  "standard": "Yes",
  "style": null,
- "system_page": 0,
+ "system_page": 1,
  "title": "arti"
 }

@@ -1,0 +1,23 @@
+{
+ "creation": "2025-07-08 13:52:31.252086",
+ "currency": "INR",
+ "docstatus": 0,
+ "doctype": "Number Card",
+ "filters_json": "{}",
+ "function": "Count",
+ "idx": 0,
+ "is_public": 0,
+ "is_standard": 1,
+ "label": "Sum of Age",
+ "modified": "2025-07-08 13:52:31.351513",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Sum of Age",
+ "owner": "Administrator",
+ "report_field": "age",
+ "report_function": "Sum",
+ "report_name": "Medical Practice Report",
+ "show_percentage_stats": 1,
+ "stats_time_interval": "Daily",
+ "type": "Report"
+}

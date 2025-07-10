@@ -10,7 +10,6 @@ class PatientVisit(Document):
 
 @frappe.whitelist()
 def get_patient_data():
-    # Example: Fetch name, patient_id from Patient Visit DocType
     query = """
         SELECT * FROM `tabPatient Visit` ORDER BY visit_date DESC LIMIT 10
     """

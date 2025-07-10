@@ -66,3 +66,6 @@
 //         }
 //     });
 // };
+
+
+page.set_title('My Page');

@@ -1,20 +1,15 @@
 # Copyright (c) 2025, tharun and contributors
 # For license information, please see license.txt
 
-# import frappe
+import frappe
 from frappe.model.document import Document
+from frappe.query_builder import DocType
+from frappe.query_builder.functions import Count
 
 
 class MedicalPractice(Document):
 	pass
 
-import frappe
-from frappe.query_builder import DocType
-from frappe.query_builder import DocType
-from frappe.query_builder.functions import Count
-
-
-from frappe.query_builder import DocType 
 
 @frappe.whitelist()
 def get_patients_above_30():
@@ -36,7 +31,6 @@ def get_patients_above_30():
 def get_patients_record():
 	MD=  DocType("Medical Practice")
 	name_field = frappe.qb.Field("patient_name")
-
 	query = (
 		frappe.qb.from_(MD)
 		.select(MD.patient_name, MD.age)

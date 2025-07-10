@@ -10,7 +10,9 @@
   "amended_from",
   "name1",
   "email",
-  "feedback"
+  "feedback",
+  "status",
+  "creation1"
  ],
  "fields": [
   {
@@ -42,13 +44,24 @@
    "fieldname": "feedback",
    "fieldtype": "Text",
    "label": "Feedback"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Good\nBad\nOK"
+  },
+  {
+   "fieldname": "creation1",
+   "fieldtype": "Datetime",
+   "label": "Creation"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-05-21 11:39:53.403023",
+ "modified": "2025-06-26 18:48:01.869362",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Customer Feedback",

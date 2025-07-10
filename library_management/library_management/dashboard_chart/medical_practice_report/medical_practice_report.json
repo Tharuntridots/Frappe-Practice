@@ -1,0 +1,33 @@
+{
+ "chart_name": "Medical Practice Report",
+ "chart_type": "Report",
+ "creation": "2025-07-08 13:53:37.395739",
+ "currency": "INR",
+ "custom_options": "",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "filters_json": "{}",
+ "group_by_type": "Count",
+ "idx": 0,
+ "is_public": 1,
+ "is_standard": 1,
+ "modified": "2025-07-08 15:34:38.977192",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Medical Practice Report",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "report_name": "Medical Practice Report",
+ "roles": [],
+ "time_interval": "Yearly",
+ "timeseries": 0,
+ "timespan": "Last Year",
+ "type": "Pie",
+ "use_report_chart": 0,
+ "x_field": "patient_name",
+ "y_axis": [
+  {
+   "y_field": "age"
+  }
+ ]
+}

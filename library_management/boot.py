@@ -16,3 +16,14 @@ def boot_session(bootinfo):
     print(f"Boot Session Status: {bootinfo.my_global_key}")
 
 
+# apps/library_management/library_management/boot.py
+
+import frappe
+
+def get_new_value():
+    doc = frappe.new_doc('Company Data')
+    doc.company_name = "qwert"
+    doc.description = "new insert"
+    doc.insert()
+    frappe.db.commit()  # Just to be sure in scheduled jobs
+    frappe.logger().info("New Company Data inserted by scheduler.")

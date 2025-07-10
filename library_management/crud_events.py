@@ -10,3 +10,5 @@ def after_insert_fieldsetup(doc, method=None):
 
 def before_save_fieldsetup(doc, method=None):
     frappe.msgprint("✍️ Saving Field Setup. Custom logic can go here.")
+
+

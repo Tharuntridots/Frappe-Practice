@@ -10,8 +10,12 @@
   "amended_from",
   "company_name",
   "description",
-  "amount",
+  "allow_edit_name",
   "status",
+  "column_break_rdoq",
+  "amount",
+  "quantity",
+  "total_amount",
   "contact_person"
  ],
  "fields": [
@@ -47,21 +51,42 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_standard_filter": 1,
    "label": "Status",
-   "options": "No1\nNo2\nNo3"
+   "options": "\nLogin\nLogOut"
   },
   {
    "fieldname": "contact_person",
    "fieldtype": "Table",
    "label": "Contact Person",
    "options": "Company Contact"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Int",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount"
+  },
+  {
+   "fieldname": "column_break_rdoq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "allow_edit_name",
+   "fieldtype": "Check",
+   "label": "Allow Edit Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-06-25 16:00:46.702444",
+ "modified": "2025-06-27 15:45:07.783854",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Company Details",

@@ -304,7 +304,8 @@ app_license = "mit"
 app_include_js = ["assets/library_management/js/desk_custom.js"]
 
 #Portal it can used in www web pages
-web_include_js = ["assets/library_management/js/portal_custom.js"]
+web_include_js = ["assets/library_management/js/portal_custom.js", "assets/library_management/js/Check.js", "apps/library_management/library_management/page.py"]
+# web_include_js = ["assets/library_management/js/test.js"]
 
 #web form it can used in webform 
 webform_include_js = {"Sales Tracker": "public/js/webform_sales_tracker.js"}
@@ -461,3 +462,41 @@ page_js = {"article-page" : "public/js/list-page.js"}
 app_include_js = [
     "/assets/library_management/js/list_page.js"
 ]
+
+
+app_include_js = "/assets/library_management/js/mypage.js"
+
+doctype_js = {
+    "Company Data": "library_management/library_management/doctype/company_data/company_data.js"
+}
+
+
+doctype_js = {
+    "Company Data": "public/js/company_data.js"
+}
+
+
+scheduler_events = {
+    "cron": {
+        "*/1 * * * *": ["library_management.boot.get_new_value"]
+    }
+}
+
+scheduler_events = {
+    "all": [
+        "library_management.disease_realtime.push_disease_chart_data"
+    ]
+}
+# scheduler_events = {
+#     "cron": {
+#         "*/1 * * * *": ["library_management.disease_realtime.push_disease_chart_data"]
+#     }
+# }
+
+scheduler_events = {
+    "cron": {
+        "*/1 * * * *": [
+            "library_management.disease_realtime.push_disease_chart_data"
+        ]
+    }
+}

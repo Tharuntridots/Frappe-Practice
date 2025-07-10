@@ -10,10 +10,6 @@
    "width": "Full"
   },
   {
-   "chart": "chart 1",
-   "width": "Half"
-  },
-  {
    "chart": "chart 2",
    "width": "Half"
   }
@@ -23,9 +19,9 @@
  "docstatus": 0,
  "doctype": "Dashboard",
  "idx": 0,
- "is_default": 1,
+ "is_default": 0,
  "is_standard": 1,
- "modified": "2025-05-28 11:46:16.143155",
+ "modified": "2025-07-08 15:29:46.604011",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Demo Dashboard",
